@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		32003451273D85DF006EC8CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32003450273D85DF006EC8CB /* AppDelegate.swift */; };
 		32003453273D85DF006EC8CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32003452273D85DF006EC8CB /* SceneDelegate.swift */; };
-		32003455273D85DF006EC8CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32003454273D85DF006EC8CB /* ViewController.swift */; };
-		32003458273D85DF006EC8CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32003456273D85DF006EC8CB /* Main.storyboard */; };
 		3200345A273D85E0006EC8CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32003459273D85E0006EC8CB /* Assets.xcassets */; };
 		3200345D273D85E0006EC8CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3200345B273D85E0006EC8CB /* LaunchScreen.storyboard */; };
 		32003468273D85E0006EC8CB /* JikanAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32003467273D85E0006EC8CB /* JikanAppTests.swift */; };
 		32003472273D85E0006EC8CB /* JikanAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32003471273D85E0006EC8CB /* JikanAppUITests.swift */; };
 		32003474273D85E0006EC8CB /* JikanAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32003473273D85E0006EC8CB /* JikanAppUITestsLaunchTests.swift */; };
+		32003485273D89F6006EC8CB /* JikanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32003484273D89F6006EC8CB /* JikanAPI.swift */; };
+		32003487273D8AEC006EC8CB /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32003486273D8AEC006EC8CB /* RootTabBarController.swift */; };
+		3200348A273D8B54006EC8CB /* AnimeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32003489273D8B54006EC8CB /* AnimeSearchViewController.swift */; };
+		3200348C273D8B63006EC8CB /* CharacterSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3200348B273D8B63006EC8CB /* CharacterSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		3200344D273D85DF006EC8CB /* JikanApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JikanApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32003450273D85DF006EC8CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32003452273D85DF006EC8CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		32003454273D85DF006EC8CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		32003457273D85DF006EC8CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32003459273D85E0006EC8CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3200345C273D85E0006EC8CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3200345E273D85E0006EC8CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,10 @@
 		3200346D273D85E0006EC8CB /* JikanAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JikanAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32003471273D85E0006EC8CB /* JikanAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JikanAppUITests.swift; sourceTree = "<group>"; };
 		32003473273D85E0006EC8CB /* JikanAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JikanAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		32003484273D89F6006EC8CB /* JikanAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JikanAPI.swift; sourceTree = "<group>"; };
+		32003486273D8AEC006EC8CB /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		32003489273D8B54006EC8CB /* AnimeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeSearchViewController.swift; sourceTree = "<group>"; };
+		3200348B273D8B63006EC8CB /* CharacterSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,13 @@
 		3200344F273D85DF006EC8CB /* JikanApp */ = {
 			isa = PBXGroup;
 			children = (
+				32003488273D8B28006EC8CB /* ViewControllers */,
+				32003481273D8975006EC8CB /* Views */,
+				32003482273D897A006EC8CB /* ViewModels */,
+				32003480273D896F006EC8CB /* Models */,
+				32003483273D8990006EC8CB /* Services */,
 				32003450273D85DF006EC8CB /* AppDelegate.swift */,
 				32003452273D85DF006EC8CB /* SceneDelegate.swift */,
-				32003454273D85DF006EC8CB /* ViewController.swift */,
-				32003456273D85DF006EC8CB /* Main.storyboard */,
 				32003459273D85E0006EC8CB /* Assets.xcassets */,
 				3200345B273D85E0006EC8CB /* LaunchScreen.storyboard */,
 				3200345E273D85E0006EC8CB /* Info.plist */,
@@ -125,6 +132,45 @@
 				32003473273D85E0006EC8CB /* JikanAppUITestsLaunchTests.swift */,
 			);
 			path = JikanAppUITests;
+			sourceTree = "<group>";
+		};
+		32003480273D896F006EC8CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		32003481273D8975006EC8CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		32003482273D897A006EC8CB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		32003483273D8990006EC8CB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				32003484273D89F6006EC8CB /* JikanAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		32003488273D8B28006EC8CB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				32003486273D8AEC006EC8CB /* RootTabBarController.swift */,
+				32003489273D8B54006EC8CB /* AnimeSearchViewController.swift */,
+				3200348B273D8B63006EC8CB /* CharacterSearchViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +279,6 @@
 			files = (
 				3200345D273D85E0006EC8CB /* LaunchScreen.storyboard in Resources */,
 				3200345A273D85E0006EC8CB /* Assets.xcassets in Resources */,
-				32003458273D85DF006EC8CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32003455273D85DF006EC8CB /* ViewController.swift in Sources */,
+				32003485273D89F6006EC8CB /* JikanAPI.swift in Sources */,
+				3200348A273D8B54006EC8CB /* AnimeSearchViewController.swift in Sources */,
+				32003487273D8AEC006EC8CB /* RootTabBarController.swift in Sources */,
+				3200348C273D8B63006EC8CB /* CharacterSearchViewController.swift in Sources */,
 				32003451273D85DF006EC8CB /* AppDelegate.swift in Sources */,
 				32003453273D85DF006EC8CB /* SceneDelegate.swift in Sources */,
 			);
@@ -297,14 +345,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		32003456273D85DF006EC8CB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				32003457273D85DF006EC8CB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3200345B273D85E0006EC8CB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,7 +484,6 @@
 				INFOPLIST_FILE = JikanApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +511,6 @@
 				INFOPLIST_FILE = JikanApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
