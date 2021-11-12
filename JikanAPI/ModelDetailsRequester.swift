@@ -9,12 +9,12 @@ import Foundation
 import Combine
 
 public protocol ModelDetailsRequester: Requester {
-    associatedtype SearchModelType: SearchAPIModel
-    func get(id modelID: SearchModelType.IDType) -> AnyPublisher<SearchModelType, Error>
+    associatedtype ModelType: APIModel
+    func get(id modelID: ModelType.IDType) -> AnyPublisher<ModelType, Error>
 }
 
 extension ModelDetailsRequester {
-    public func get(id modelID: SearchModelType.IDType) -> AnyPublisher<SearchModelType, Error> {
+    public func get(id modelID: ModelType.IDType) -> AnyPublisher<ModelType, Error> {
         requestService.get("\(modelID)")
             .eraseToAnyPublisher()
     }

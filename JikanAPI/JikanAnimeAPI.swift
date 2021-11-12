@@ -8,9 +8,11 @@
 import Foundation
 
 public final class JikanAnimeAPI: ModelDetailsRequester {
-    public typealias SearchModelType = Anime.Short
+    public typealias ModelType = Anime
     
     public var pathComponents: [Path] {
         [.anime]
     }
+    
+    public init() { }
 }

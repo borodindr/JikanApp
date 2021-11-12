@@ -27,6 +27,7 @@ final class AnimeSearchViewController: SearchViewController<AnimeSearchViewModel
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Anime"
+        contentView.tableView.delegate = self
         contentView.tableView.register(AnimeSearchTableViewCell.self, forCellReuseIdentifier: animeCellID)
     }
     
@@ -77,4 +78,15 @@ final class AnimeSearchViewController: SearchViewController<AnimeSearchViewModel
         return cell
     }
     
+}
+
+    // MARK: - UITableViewDelegate
+extension AnimeSearchViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let item = items[indexPath.row]
+        let itemID = item.id
+        let vc = AnimeViewController(modelID: itemID)
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }

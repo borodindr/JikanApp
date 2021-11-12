@@ -51,6 +51,12 @@
 		328FB97D273E2A6500251DB0 /* Preview+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328FB97C273E2A6500251DB0 /* Preview+Type.swift */; };
 		328FB97F273E2E6A00251DB0 /* CharacterSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328FB97E273E2E6A00251DB0 /* CharacterSearchViewModel.swift */; };
 		328FB981273E2ED100251DB0 /* CharacterSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328FB980273E2ED100251DB0 /* CharacterSearchTableViewCell.swift */; };
+		328FB983273E318A00251DB0 /* AnimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328FB982273E318A00251DB0 /* AnimeViewController.swift */; };
+		328FB985273E31AA00251DB0 /* AnimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328FB984273E31AA00251DB0 /* AnimeViewModel.swift */; };
+		328FB987273E320400251DB0 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328FB986273E320400251DB0 /* DetailsViewModel.swift */; };
+		328FB989273E33AC00251DB0 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328FB988273E33AC00251DB0 /* DetailsViewController.swift */; };
+		328FB98B273E348100251DB0 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328FB98A273E348100251DB0 /* DetailsView.swift */; };
+		328FB98D273E39E900251DB0 /* AnyDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328FB98C273E39E900251DB0 /* AnyDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +159,12 @@
 		328FB97C273E2A6500251DB0 /* Preview+Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Preview+Type.swift"; sourceTree = "<group>"; };
 		328FB97E273E2E6A00251DB0 /* CharacterSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchViewModel.swift; sourceTree = "<group>"; };
 		328FB980273E2ED100251DB0 /* CharacterSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchTableViewCell.swift; sourceTree = "<group>"; };
+		328FB982273E318A00251DB0 /* AnimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewController.swift; sourceTree = "<group>"; };
+		328FB984273E31AA00251DB0 /* AnimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeViewModel.swift; sourceTree = "<group>"; };
+		328FB986273E320400251DB0 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		328FB988273E33AC00251DB0 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		328FB98A273E348100251DB0 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		328FB98C273E39E900251DB0 /* AnyDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				328FB96E273E12F200251DB0 /* SearchView.swift */,
+				328FB98A273E348100251DB0 /* DetailsView.swift */,
 				328FB96C273E01E300251DB0 /* AnimeSearchTableViewCell.swift */,
 				328FB980273E2ED100251DB0 /* CharacterSearchTableViewCell.swift */,
 			);
@@ -288,6 +301,9 @@
 				320034D7273DD77D006EC8CB /* SearchViewModel.swift */,
 				320034D9273DD8AD006EC8CB /* AnimeSearchViewModel.swift */,
 				328FB97E273E2E6A00251DB0 /* CharacterSearchViewModel.swift */,
+				328FB98C273E39E900251DB0 /* AnyDetailsViewModel.swift */,
+				328FB986273E320400251DB0 /* DetailsViewModel.swift */,
+				328FB984273E31AA00251DB0 /* AnimeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -306,6 +322,8 @@
 				320034D5273DD773006EC8CB /* SearchViewController.swift */,
 				32003489273D8B54006EC8CB /* AnimeSearchViewController.swift */,
 				3200348B273D8B63006EC8CB /* CharacterSearchViewController.swift */,
+				328FB988273E33AC00251DB0 /* DetailsViewController.swift */,
+				328FB982273E318A00251DB0 /* AnimeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -548,18 +566,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				328FB985273E31AA00251DB0 /* AnimeViewModel.swift in Sources */,
 				328FB96F273E12F200251DB0 /* SearchView.swift in Sources */,
 				320034D6273DD773006EC8CB /* SearchViewController.swift in Sources */,
+				328FB987273E320400251DB0 /* DetailsViewModel.swift in Sources */,
 				320034D8273DD77D006EC8CB /* SearchViewModel.swift in Sources */,
 				3200348A273D8B54006EC8CB /* AnimeSearchViewController.swift in Sources */,
 				328FB97F273E2E6A00251DB0 /* CharacterSearchViewModel.swift in Sources */,
 				32003487273D8AEC006EC8CB /* RootTabBarController.swift in Sources */,
 				3200348C273D8B63006EC8CB /* CharacterSearchViewController.swift in Sources */,
+				328FB989273E33AC00251DB0 /* DetailsViewController.swift in Sources */,
 				328FB971273E20B100251DB0 /* AnySearchViewModel.swift in Sources */,
+				328FB98B273E348100251DB0 /* DetailsView.swift in Sources */,
 				328FB96D273E01E300251DB0 /* AnimeSearchTableViewCell.swift in Sources */,
+				328FB983273E318A00251DB0 /* AnimeViewController.swift in Sources */,
 				320034DA273DD8AD006EC8CB /* AnimeSearchViewModel.swift in Sources */,
 				32003451273D85DF006EC8CB /* AppDelegate.swift in Sources */,
 				328FB981273E2ED100251DB0 /* CharacterSearchTableViewCell.swift in Sources */,
+				328FB98D273E39E900251DB0 /* AnyDetailsViewModel.swift in Sources */,
 				32003453273D85DF006EC8CB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

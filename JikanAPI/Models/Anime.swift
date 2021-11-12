@@ -20,7 +20,7 @@ public struct Anime: APIModel {
     public let rating: String
     public let score: Double
     public let synopsis: String
-    public let background: String
+    public let background: String?
 }
 
 extension Anime {

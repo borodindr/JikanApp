@@ -10,7 +10,7 @@ import Combine
 
 /// Base view controller to handle searching from Jikan API and display result. It should be subclasses by concrete implementation
 class SearchViewController<ViewModel>
-: UIViewController, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate
+: UIViewController, UISearchBarDelegate, UITableViewDataSource
 where ViewModel: AnySearchViewModel {
     
     // MARK: - Public properties
@@ -72,7 +72,6 @@ where ViewModel: AnySearchViewModel {
     private func prepareTableView() {
         let tableView = contentView.tableView
         tableView.dataSource = self
-        tableView.delegate = self
         tableView.rowHeight = UITableView.automaticDimension
     }
     
@@ -132,5 +131,4 @@ where ViewModel: AnySearchViewModel {
         UITableViewCell()
     }
     
-    // MARK: - UITableViewDelegate
 }
