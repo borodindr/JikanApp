@@ -7,11 +7,9 @@
 
 import Foundation
 
-extension JikanAPI {
-    /// Declares all available paths used by the API
-    enum Path: String {
-        case search
-        case anime
-        case character
-    }
+/// Declares all available paths used by the API
+public enum Path: String {
+    case search
+    case anime
+    case character
 }

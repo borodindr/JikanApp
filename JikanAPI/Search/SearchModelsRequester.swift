@@ -1,5 +1,5 @@
 //
-//  JikanSearchAPI.swift
+//  SearchModelsRequester.swift
 //  JikanAPI
 //
 //  Created by Dmitry Borodin on 11.11.2021.
@@ -8,31 +8,21 @@
 import Foundation
 import Combine
 
-/// Base class for API search requests.
-public class JikanSearchAPI<SearchModel>: JikanAPI where SearchModel: SearchAPIModel {
-    enum SearchType: String {
-        case anime, character
-    }
+public protocol SearchModelsRequester: AnyObject, Requester {
+    associatedtype SearchModel: SearchAPIModel
     
-    private var searchQuery = ""
-    private var currentPage = 0
-    private var queryItems: [String: Any] {
+    var searchQuery: String { get set }
+    var currentPage: Int { get set }
+    
+    func search(query: String) -> AnyPublisher<[SearchModel], Error>
+    func nextPage() -> AnyPublisher<[SearchModel], Error>
+}
+
+extension SearchModelsRequester {
+    var queryItems: [String: Any] {
         ["q": searchQuery,
          "page": currentPage]
     }
-    
-    
-    convenience init(searchPathType: SearchType) {
-        let typePath: Path
-        switch searchPathType {
-        case .anime:
-            typePath = .anime
-        case .character:
-            typePath = .character
-        }
-        self.init(commonPathComponents: .search, typePath)
-    }
-    
     
     /// Performs initial search of first page for provided query.
     /// - Parameter query: Search query to look for

@@ -8,8 +8,15 @@
 import Foundation
 
 /// Class responsible to search anime
-public class JikanAnimeSearchAPI: JikanSearchAPI<Anime.Short> {
-    public convenience init() {
-        self.init(searchPathType: .anime)
+public class JikanAnimeSearchAPI: SearchModelsRequester {
+    public var searchQuery = ""
+    public var currentPage = 0
+    
+    public typealias SearchModel = Anime.Short
+    
+    public var pathComponents: [Path] {
+        [.search, .anime]
     }
+    
+    public init() { }
 }

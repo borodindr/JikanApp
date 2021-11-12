@@ -6,16 +6,11 @@
 //
 
 import Foundation
-import Combine
 
-final class JikanAnimeAPI: JikanAPI {
+public final class JikanAnimeAPI: ModelDetailsRequester {
+    public typealias SearchModelType = Anime.Short
     
-    public convenience init() {
-        self.init(commonPathComponents: .anime)
-    }
-    
-    func get(id animeID: Anime.IDType) -> AnyPublisher<Anime, Error> {
-        requestService.get("\(animeID)")
-            .eraseToAnyPublisher()
+    public var pathComponents: [Path] {
+        [.anime]
     }
 }

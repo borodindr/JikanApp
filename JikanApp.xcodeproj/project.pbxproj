@@ -24,12 +24,12 @@
 		320034B1273DB8FD006EC8CB /* JikanAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3200349C273DB8FD006EC8CB /* JikanAPI.framework */; };
 		320034B2273DB8FD006EC8CB /* JikanAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3200349C273DB8FD006EC8CB /* JikanAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		320034BA273DB917006EC8CB /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3200348D273D98D2006EC8CB /* RequestService.swift */; };
-		320034BB273DB91A006EC8CB /* JikanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32003484273D89F6006EC8CB /* JikanAPI.swift */; };
+		320034BB273DB91A006EC8CB /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32003484273D89F6006EC8CB /* Requester.swift */; };
 		320034BC273DB962006EC8CB /* Anime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3200348F273DA2E2006EC8CB /* Anime.swift */; };
 		320034BD273DB968006EC8CB /* AnimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32003491273DA590006EC8CB /* AnimeType.swift */; };
 		320034BE273DB96C006EC8CB /* RatingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32003493273DA675006EC8CB /* RatingType.swift */; };
 		320034BF273DB972006EC8CB /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32003495273DA740006EC8CB /* SearchResult.swift */; };
-		320034C1273DB9AE006EC8CB /* JikanSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320034C0273DB9AE006EC8CB /* JikanSearchAPI.swift */; };
+		320034C1273DB9AE006EC8CB /* SearchModelsRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320034C0273DB9AE006EC8CB /* SearchModelsRequester.swift */; };
 		320034C3273DB9E4006EC8CB /* SearchAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320034C2273DB9E4006EC8CB /* SearchAPIModel.swift */; };
 		320034C5273DBDAE006EC8CB /* JikanAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320034C4273DBDAE006EC8CB /* JikanAPIError.swift */; };
 		320034C7273DC01F006EC8CB /* Anime+Short.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320034C6273DC01F006EC8CB /* Anime+Short.swift */; };
@@ -37,6 +37,13 @@
 		320034CC273DC5F7006EC8CB /* JikanAPI+Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320034CB273DC5F7006EC8CB /* JikanAPI+Path.swift */; };
 		320034D0273DCDAD006EC8CB /* JikanAnimeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320034CF273DCDAD006EC8CB /* JikanAnimeAPI.swift */; };
 		320034D4273DCEAA006EC8CB /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320034D3273DCEAA006EC8CB /* APIModel.swift */; };
+		320034D6273DD773006EC8CB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320034D5273DD773006EC8CB /* SearchViewController.swift */; };
+		320034D8273DD77D006EC8CB /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320034D7273DD77D006EC8CB /* SearchViewModel.swift */; };
+		320034DA273DD8AD006EC8CB /* AnimeSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320034D9273DD8AD006EC8CB /* AnimeSearchViewModel.swift */; };
+		328FB96D273E01E300251DB0 /* AnimeSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328FB96C273E01E300251DB0 /* AnimeSearchTableViewCell.swift */; };
+		328FB96F273E12F200251DB0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328FB96E273E12F200251DB0 /* SearchView.swift */; };
+		328FB971273E20B100251DB0 /* AnySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328FB970273E20B100251DB0 /* AnySearchViewModel.swift */; };
+		328FB973273E239500251DB0 /* ModelDetailsRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328FB972273E239500251DB0 /* ModelDetailsRequester.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,7 +110,7 @@
 		3200346D273D85E0006EC8CB /* JikanAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JikanAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32003471273D85E0006EC8CB /* JikanAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JikanAppUITests.swift; sourceTree = "<group>"; };
 		32003473273D85E0006EC8CB /* JikanAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JikanAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		32003484273D89F6006EC8CB /* JikanAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JikanAPI.swift; sourceTree = "<group>"; };
+		32003484273D89F6006EC8CB /* Requester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
 		32003486273D8AEC006EC8CB /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		32003489273D8B54006EC8CB /* AnimeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeSearchViewController.swift; sourceTree = "<group>"; };
 		3200348B273D8B63006EC8CB /* CharacterSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchViewController.swift; sourceTree = "<group>"; };
@@ -117,7 +124,7 @@
 		3200349F273DB8FD006EC8CB /* JikanAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = JikanAPI.docc; sourceTree = "<group>"; };
 		320034A5273DB8FD006EC8CB /* JikanAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JikanAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		320034AC273DB8FD006EC8CB /* JikanAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JikanAPITests.swift; sourceTree = "<group>"; };
-		320034C0273DB9AE006EC8CB /* JikanSearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JikanSearchAPI.swift; sourceTree = "<group>"; };
+		320034C0273DB9AE006EC8CB /* SearchModelsRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModelsRequester.swift; sourceTree = "<group>"; };
 		320034C2273DB9E4006EC8CB /* SearchAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPIModel.swift; sourceTree = "<group>"; };
 		320034C4273DBDAE006EC8CB /* JikanAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JikanAPIError.swift; sourceTree = "<group>"; };
 		320034C6273DC01F006EC8CB /* Anime+Short.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Anime+Short.swift"; sourceTree = "<group>"; };
@@ -125,6 +132,13 @@
 		320034CB273DC5F7006EC8CB /* JikanAPI+Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JikanAPI+Path.swift"; sourceTree = "<group>"; };
 		320034CF273DCDAD006EC8CB /* JikanAnimeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JikanAnimeAPI.swift; sourceTree = "<group>"; };
 		320034D3273DCEAA006EC8CB /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		320034D5273DD773006EC8CB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		320034D7273DD77D006EC8CB /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		320034D9273DD8AD006EC8CB /* AnimeSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeSearchViewModel.swift; sourceTree = "<group>"; };
+		328FB96C273E01E300251DB0 /* AnimeSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeSearchTableViewCell.swift; sourceTree = "<group>"; };
+		328FB96E273E12F200251DB0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		328FB970273E20B100251DB0 /* AnySearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySearchViewModel.swift; sourceTree = "<group>"; };
+		328FB972273E239500251DB0 /* ModelDetailsRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDetailsRequester.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +256,8 @@
 		32003481273D8975006EC8CB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				328FB96C273E01E300251DB0 /* AnimeSearchTableViewCell.swift */,
+				328FB96E273E12F200251DB0 /* SearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -249,6 +265,9 @@
 		32003482273D897A006EC8CB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				320034D7273DD77D006EC8CB /* SearchViewModel.swift */,
+				328FB970273E20B100251DB0 /* AnySearchViewModel.swift */,
+				320034D9273DD8AD006EC8CB /* AnimeSearchViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -266,6 +285,7 @@
 				32003486273D8AEC006EC8CB /* RootTabBarController.swift */,
 				32003489273D8B54006EC8CB /* AnimeSearchViewController.swift */,
 				3200348B273D8B63006EC8CB /* CharacterSearchViewController.swift */,
+				320034D5273DD773006EC8CB /* SearchViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -276,9 +296,10 @@
 				3200349E273DB8FD006EC8CB /* JikanAPI.h */,
 				3200348D273D98D2006EC8CB /* RequestService.swift */,
 				320034C4273DBDAE006EC8CB /* JikanAPIError.swift */,
-				32003484273D89F6006EC8CB /* JikanAPI.swift */,
-				320034CF273DCDAD006EC8CB /* JikanAnimeAPI.swift */,
 				320034CB273DC5F7006EC8CB /* JikanAPI+Path.swift */,
+				32003484273D89F6006EC8CB /* Requester.swift */,
+				328FB972273E239500251DB0 /* ModelDetailsRequester.swift */,
+				320034CF273DCDAD006EC8CB /* JikanAnimeAPI.swift */,
 				320034C8273DC0C4006EC8CB /* Search */,
 				32003480273D896F006EC8CB /* Models */,
 				3200349F273DB8FD006EC8CB /* JikanAPI.docc */,
@@ -297,7 +318,7 @@
 		320034C8273DC0C4006EC8CB /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				320034C0273DB9AE006EC8CB /* JikanSearchAPI.swift */,
+				320034C0273DB9AE006EC8CB /* SearchModelsRequester.swift */,
 				320034C9273DC0D2006EC8CB /* JikanAnimeSearchAPI.swift */,
 			);
 			path = Search;
@@ -506,9 +527,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				328FB96F273E12F200251DB0 /* SearchView.swift in Sources */,
+				320034D6273DD773006EC8CB /* SearchViewController.swift in Sources */,
+				320034D8273DD77D006EC8CB /* SearchViewModel.swift in Sources */,
 				3200348A273D8B54006EC8CB /* AnimeSearchViewController.swift in Sources */,
 				32003487273D8AEC006EC8CB /* RootTabBarController.swift in Sources */,
 				3200348C273D8B63006EC8CB /* CharacterSearchViewController.swift in Sources */,
+				328FB971273E20B100251DB0 /* AnySearchViewModel.swift in Sources */,
+				328FB96D273E01E300251DB0 /* AnimeSearchTableViewCell.swift in Sources */,
+				320034DA273DD8AD006EC8CB /* AnimeSearchViewModel.swift in Sources */,
 				32003451273D85DF006EC8CB /* AppDelegate.swift in Sources */,
 				32003453273D85DF006EC8CB /* SceneDelegate.swift in Sources */,
 			);
@@ -543,11 +570,12 @@
 				320034C3273DB9E4006EC8CB /* SearchAPIModel.swift in Sources */,
 				320034BD273DB968006EC8CB /* AnimeType.swift in Sources */,
 				320034CC273DC5F7006EC8CB /* JikanAPI+Path.swift in Sources */,
-				320034C1273DB9AE006EC8CB /* JikanSearchAPI.swift in Sources */,
+				320034C1273DB9AE006EC8CB /* SearchModelsRequester.swift in Sources */,
 				320034CA273DC0D2006EC8CB /* JikanAnimeSearchAPI.swift in Sources */,
-				320034BB273DB91A006EC8CB /* JikanAPI.swift in Sources */,
+				320034BB273DB91A006EC8CB /* Requester.swift in Sources */,
 				320034C5273DBDAE006EC8CB /* JikanAPIError.swift in Sources */,
 				320034D0273DCDAD006EC8CB /* JikanAnimeAPI.swift in Sources */,
+				328FB973273E239500251DB0 /* ModelDetailsRequester.swift in Sources */,
 				320034BE273DB96C006EC8CB /* RatingType.swift in Sources */,
 				320034BA273DB917006EC8CB /* RequestService.swift in Sources */,
 			);
