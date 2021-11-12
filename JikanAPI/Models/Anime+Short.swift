@@ -26,7 +26,7 @@ extension Anime {
 }
 
 extension Anime.Short {
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case id = "mal_id"
         case url = "url"
         case imageURL = "image_url"
